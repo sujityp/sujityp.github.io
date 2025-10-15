@@ -2,7 +2,9 @@
 permalink: /about/
 title: "About"
 ---
+## Welcome
+I’m a fourth-year Medical and Biological Physics student at **McMaster University**, exploring how physics can help us understand complex biological systems. My work combines **computational modeling, image analysis, and machine learning** to study dynamic behaviors in living systems.
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I’ve worked as a **biophysics research** assistant at McMaster, analyzing the motion of magnetotactic bacteria using single-particle tracking, image processing, and machine learning. I also worked as a **Biomedical Research co-op student** at the Princess Margaret Cancer Centre, where I developed Monte Carlo light transport models and worked with fluorescence imaging systems to study light-tissue interactions.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Outside of the lab, I’m passionate about indie game development, building small, experimental projects. You can see my personal projects here. I enjoy combining analytical rigor with creative problem-solving, whether that’s modeling bacteria, simulating light transport, or designing a game from scratch.
