@@ -1,0 +1,64 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<!-- ===========================
+     Recent Projects Section
+=========================== -->
+{% assign recent_projects = site.projects | sort:"date" | reverse | slice: 0,3 %}
+{% if recent_projects.size > 0 %}
+<section id="recent-projects" class="entries-grid">
+  <h2 class="archive__subtitle">Recent Projects</h2>
+  <div class="grid gap-4 md:grid-cols-3">
+    {% for project in recent_projects %}
+      <div class="card">
+        <h3 class="card__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        {% if project.excerpt %}
+          <p class="card__excerpt">{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
+        {% endif %}
+        <p class="card__date">{{ project.date | date: "%b %d, %Y" }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<!-- ===========================
+     Recent Research Section
+=========================== -->
+{% assign recent_research = site.pages | where:"category","research" | sort:"date" | reverse | slice: 0,3 %}
+{% if recent_research.size > 0 %}
+<section id="recent-research" class="entries-grid">
+  <h2 class="archive__subtitle">Recent Research</h2>
+  <div class="grid gap-4 md:grid-cols-3">
+    {% for research in recent_research %}
+      <div class="card">
+        <h3 class="card__title"><a href="{{ research.url }}">{{ research.title }}</a></h3>
+        {% if research.excerpt %}
+          <p class="card__excerpt">{{ research.excerpt | strip_html | truncatewords: 20 }}</p>
+        {% endif %}
+        <p class="card__date">{{ research.date | date: "%b %d, %Y" }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<!-- ===========================
+     Recent Writing Posts Section
+=========================== -->
+<h2 class="archive__subtitle">Recent Writing</h2>
+
+{% if paginator %}
+  {% assign writing_posts = paginator.posts %}
+{% else %}
+  {% assign writing_posts = site.posts | where:"category","writing" | sort:"date" | reverse %}
+{% endif %}
+
+<div class="entries-list">
+  {% include documents-collection.html entries=writing_posts type="list" %}
+</div>
+
+{% include paginator.html %}
